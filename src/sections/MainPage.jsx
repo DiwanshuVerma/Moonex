@@ -2,34 +2,34 @@ import { Button } from '../components/Button'
 import { Ellipse } from '../components/ellipse/Ellipse'
 import { Ellipse1 } from '../components/ellipse/Ellipse1'
 import { Navbar } from '../components/Navbar'
-import { Sphere } from '../components/Sphere'
 import './MainPage.css'
 
 export const MainPage = () => {
     return (
-        <div className={' px-16 lg:px-28 py-5 bg-[#061523] min-h-[110vh] min-w-full overflow-hidden text-white relative'}>
+        <div className={'lg:px-8 px-4 py-5 h-screen min-w-full text-white relative'}>
 
-            <div className='z-50 fixed'>
+            <div className='z-50 relative'>
                 <Navbar />
             </div>
 
             <div className='z-10'>
-                <Ellipse h='h-72' w='w-96' position={'top-2 left-0'} opacity='opacity-20' />
-                <Ellipse h='h-44' w='w-72' position={'bottom-24 right-0'} opacity='opacity-20' />
+                <Ellipse h='h-72' w='w-96' position={'top-2 left-0'} blur={'blur-[230px]'}/>
+                <Ellipse h='h-44' w='w-72' position={'bottom-24 right-0'} blur={'blur-[210px]'} />
             </div>
 
             <div className='z-20'>
-                <Ellipse1 size={'w-[750px] h-[300px]'} />
-                <Ellipse1 size={'w-[1250px] h-[450px]'} />
-                <Ellipse1 size={'w-[1850px] h-[600px]'} />
+                <Ellipse1 size={'w-[950px] h-[500px]'} />
+                <Ellipse1 size={'w-[1400px] h-[650px]'} />
+                <Ellipse1 size={'w-[1950px] h-[850px]'} />
             </div>
 
             <div className='z-40'>
                 <Content />
             </div>
 
+                {/* big sphere */}
             <div className='z-30'>
-                <Sphere />
+            <div className="gola bg-gradient-to-r from-[#FFF6D7] to-[#E4B40D] h-44 w-44 rounded-full absolute top-[32%] right-32"></div>
             </div>
 
             {/* stars */}
@@ -45,7 +45,7 @@ export const MainPage = () => {
 
 const Content = () => {
     return (
-        <div className='top-1/2 -translate-y-1/2 absolute'>
+        <div id='home' className='content top-1/2 -translate-y-1/2 absolute px-20'>
             
             <div>
                 <h1 className='text-5xl font-semibold'>Trusted Multi-Chain <br /> <span className='text-[#F9D423]'>DEX</span> Plateform</h1>

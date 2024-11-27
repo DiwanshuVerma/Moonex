@@ -4,17 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { MainPage } from './sections/MainPage'
 import { About } from './sections/About'
+import Faqs from './sections/Faqs'
+import Footer from './sections/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <MainPage />
-    <div className='-z-10'>
-    <About />
+    <div className='!scroll-smooth bg-[#061523] min-h-screen overflow-x-hidden'>
+      <MainPage />
+      <About />
+      <Faqs />  
+      <Footer />
     </div>
-    </>
   )
 }
 

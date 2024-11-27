@@ -1,0 +1,38 @@
+@media (max-width: 1240px){
+.features{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-row-gap: 40px;
+}
+.box{
+    width: 360px;
+}
+}
+
+@media (max-width: 890px){
+    .gola{
+        right: 2rem;
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .content{
+        padding-inline: 3rem;
+    }
+
+    .features{
+        grid-template-columns: 1fr;
+        
+    }
+    .box{
+        width: 95%;
+    }
+    
+}
+
+
+@media (max-width: 730px){
+    .gola{
+        display: none;
+    }
+
+}
