@@ -1,0 +1,21 @@
+.btn {
+    /* $btn-color: random-color($max:200);
+    $btn-color-dark: shade($btn-color, 40%); */
+    color: tint(gray);
+    
+    &:before {
+      content: '';
+      @include absolute(0,-50px,0,0);
+      border-right: 50px solid transparent;
+      border-bottom: 80px solid rgb(214, 48, 48);
+      transform: translateX(-100%);
+    }
+  
+    &:hover {
+      color: tint(yellow, 75%);
+  
+      &:before {
+        transform: translateX(0);
+      }
+    }
+}
