@@ -6,7 +6,7 @@ import './MainPage.css'
 
 export const MainPage = () => {
     return (
-        <div className={'lg:px-8 px-4 py-5 h-screen min-w-full text-white relative'}>
+        <div className={'lg:px-8 py-5 h-screen min-w-full text-white relative'}>
 
             <div className='z-50 relative'>
                 <Navbar />
@@ -45,7 +45,7 @@ export const MainPage = () => {
 
 const Content = () => {
     return (
-        <div id='home' className='content top-1/2 -translate-y-1/2 absolute px-20'>
+        <div id='home' className='content top-1/2 -translate-y-1/2 absolute'>
             
             <div>
                 <h1 className='text-5xl font-semibold'>Trusted Multi-Chain <br /> <span className='text-[#F9D423]'>DEX</span> Plateform</h1>
